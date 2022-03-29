@@ -27,3 +27,11 @@ alter table class
 add teacher_cn varchar(50);
 alter table class
 drop teacher_cn;
+alter table class
+rename column id to id_class;
+alter table class
+change column id_class id
+int not null;
+alter table class
+change column id id_class
+varchar(11) not null;

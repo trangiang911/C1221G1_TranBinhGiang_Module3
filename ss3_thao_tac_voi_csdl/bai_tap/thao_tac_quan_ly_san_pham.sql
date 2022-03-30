@@ -10,3 +10,7 @@ insert into order_detail (o_id,p_id,od_qty) values
 select o_id,o_date,o_total_price from `order`;
 select c_name,p_name from customer join `order` on customer.c_id=`order`.c_id join order_detail on `order`.o_id=order_detail.o_id join product on order_detail.p_id=product.p_id;
 select c_name from customer left join `order` on customer.c_id=`order`.c_id where `order`.c_id is null;	
+select `order`.o_id,o_date,sum(p_price*od_qty) as total 
+from `order` inner join order_detail on `order`.o_id=order_detail.o_id
+inner join product on order_detail.p_id=product.p_id
+group by `order`.o_id;

@@ -71,3 +71,13 @@ use case_study_furama;
 select khach_hang.ho_ten
 from khach_hang
 group by khach_hang.ho_ten;
+
+-- task 15--
+use case_study_furama;
+select nv.ma_nhan_vien,nv.ho_ten,nv.so_dien_thoai,nv.dia_chi,
+count(*) as so_lan
+from nhan_vien nv
+left join hop_dong on nv.ma_nhan_vien = hop_dong.ma_nhan_vien
+group by nv.ma_nhan_vien
+ having so_lan>=3;
+

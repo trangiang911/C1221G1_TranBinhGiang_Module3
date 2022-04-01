@@ -4,7 +4,7 @@ CREATE PROCEDURE findAllCustomers()
 
 BEGIN
 
-  SELECT * FROM customers;
+    SELECT * FROM customers;
 
 END //
 
@@ -19,7 +19,7 @@ CREATE PROCEDURE findAllCustomers()
 
 BEGIN
 
-SELECT * FROM customers where customerNumber = 175;
+    SELECT * FROM customers where customerNumber = 175;
 
 END //
 DELIMITER ;

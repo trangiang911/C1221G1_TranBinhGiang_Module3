@@ -49,7 +49,20 @@ delimiter //;
 call add_product('sp7','bia',12000,5,'bia',0);
 
 delimiter //
-create procedure edit_product(in `id` int)
+create procedure edit_product(in `id_edit` int,`ma_sp` varchar(25),`name` varchar(25),`price` double,`amount` int,`description` varchar(50),`status` bit)
 begin
-    alter table products_1 
+    update
+        products_1
+            set product_code=`ma_sp`,product_name=`name`,product_price=`price`,product_amount=`amount`,product_description=`description`,product_status=`status`
+    where id=`id_edit`;
 end //
+delimiter //
+call edit_product(1,'sp8','rượu',6000,9,'rượu',1);
+
+delimiter //
+create procedure del_product(in `id_del` int)
+begin
+    delete from products_1 where id=id_del;
+end //
+delimiter //
+call del_product(1);

@@ -71,13 +71,143 @@ use case_study_furama;
 select khach_hang.ho_ten
 from khach_hang
 group by khach_hang.ho_ten;
+-- task9--
+use case_study_furama;
+select (month(ngay_lam_hop_dong)) as thang, count(ma_khach_hang) as so_luong_khach_hang
+from hop_dong
+group by thang
+order by thang asc;
+
+-- task10--
+select hop_dong.ma_hop_dong,
+       ngay_lam_hop_dong,
+       ngay_ket_thuc,
+       tien_dat_coc,
+       sum(coalesce(hop_dong_chi_tiet.so_luong, 0)) as so_luong_dich_vu_di_kem
+from hop_dong
+         left join hop_dong_chi_tiet on hop_dong.ma_hop_dong = hop_dong_chi_tiet.ma_hop_dong
+group by hop_dong.ma_hop_dong;
+
+-- task11--
+select dich_vu_di_kem.ma_dich_vu_di_kem, dich_vu_di_kem.ten_dich_vu_di_kem
+from hop_dong_chi_tiet
+         join dich_vu_di_kem on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+         join hop_dong on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
+         join khach_hang on hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
+         join loai_khach on khach_hang.ma_loai_khach = loai_khach.ma_loai_khach
+where khach_hang.ma_loai_khach = 1
+  and dia_chi like '%Vinh%';
+
+-- task12--
+select hop_dong.ma_hop_dong,
+       nhan_vien.ho_ten,
+       khach_hang.ho_ten,
+       khach_hang.so_dien_thoai,
+       ten_dich_vu,
+       sum(coalesce(hop_dong_chi_tiet.so_luong, 0)) as so_luong_dich_vu_di_kem,
+       tien_dat_coc
+from hop_dong
+         left join nhan_vien on hop_dong.ma_nhan_vien = nhan_vien.ma_nhan_vien
+         left join khach_hang on hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
+         left join dich_vu on hop_dong.ma_dich_vu = dich_vu.ma_dich_vu
+         left join hop_dong_chi_tiet on hop_dong.ma_hop_dong = hop_dong_chi_tiet.ma_hop_dong
+where hop_dong.ngay_lam_hop_dong between '2020-10-01' and '2020-12-31'
+  and hop_dong.ngay_lam_hop_dong not between '2021-01-01' and '2020-06-30'
+group by hop_dong.ma_hop_dong;
+
+-- task 13--
+select dich_vu_di_kem.ma_dich_vu_di_kem,
+       dich_vu_di_kem.ten_dich_vu_di_kem,
+       max(sub_so_luong_dich_vu_di_kem) as so_luong_dich_vu_di_kem
+from dich_vu_di_kem
+         join hop_dong_chi_tiet on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+         join (select dich_vu_di_kem.ma_dich_vu_di_kem, sum(hop_dong_chi_tiet.so_luong) as sub_so_luong_dich_vu_di_kem
+               from dich_vu_di_kem
+                        join hop_dong_chi_tiet on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+               group by dich_vu_di_kem.ma_dich_vu_di_kem) a on dich_vu_di_kem.ma_dich_vu_di_kem = a.ma_dich_vu_di_kem
+group by dich_vu_di_kem.ma_dich_vu_di_kem;
+
+-- task 14--
+select hop_dong.ma_hop_dong,
+       loai_dich_vu.ten_loai_dich_vu,
+       dich_vu_di_kem.ten_dich_vu_di_kem,
+       count(dich_vu_di_kem.ma_dich_vu_di_kem) as so_lan_su_dung
+from hop_dong
+         join dich_vu on hop_dong.ma_dich_vu = dich_vu.ma_dich_vu
+         join loai_dich_vu on dich_vu.ma_loai_dich_vu = loai_dich_vu.ma_loai_dich_vu
+         join hop_dong_chi_tiet on hop_dong.ma_hop_dong = hop_dong_chi_tiet.ma_hop_dong
+         join dich_vu_di_kem on hop_dong_chi_tiet.ma_dich_vu_di_kem = dich_vu_di_kem.ma_dich_vu_di_kem
+group by dich_vu_di_kem.ma_dich_vu_di_kem
+having so_lan_su_dung = 1;
+# order by ma_hop_dong asc ;
 
 -- task 15--
 use case_study_furama;
-select nv.ma_nhan_vien,nv.ho_ten,nv.so_dien_thoai,nv.dia_chi,
-count(*) as so_lan
+select nv.ma_nhan_vien,
+       nv.ho_ten,
+       nv.so_dien_thoai,
+       nv.dia_chi,
+       count(*) as so_lan
 from nhan_vien nv
-left join hop_dong on nv.ma_nhan_vien = hop_dong.ma_nhan_vien
+         left join hop_dong on nv.ma_nhan_vien = hop_dong.ma_nhan_vien
 group by nv.ma_nhan_vien
- having so_lan>=3;
+having so_lan >= 3;
 
+-- task16--
+delete
+from nhan_vien
+where nhan_vien.ma_nhan_vien not in (select ma_nhan_vien
+                                     from (select distinct nhan_vien.ma_nhan_vien
+                                           from nhan_vien
+                                                    join hop_dong on nhan_vien.ma_nhan_vien = hop_dong.ma_nhan_vien
+                                           where year(hop_dong.ngay_lam_hop_dong) between '2019' and '2021') as x);
+
+-- task17--
+update khach_hang
+set khach_hang.ma_loai_khach=1
+where khach_hang.ma_khach_hang in (select ma_khach_hang
+                                   from (select distinct khach_hang.ma_khach_hang,
+                                                         sum(dich_vu.chi_phi_thue +
+                                                             coalesce(hop_dong_chi_tiet.so_luong * dich_vu_di_kem.gia, 0)) as tong_tien
+                                         from dich_vu
+                                                  join hop_dong on dich_vu.ma_dich_vu = hop_dong.ma_dich_vu
+                                                  join hop_dong_chi_tiet
+                                                       on hop_dong.ma_hop_dong = hop_dong_chi_tiet.ma_hop_dong
+                                                  join dich_vu_di_kem
+                                                       on hop_dong_chi_tiet.ma_dich_vu_di_kem = dich_vu_di_kem.ma_dich_vu_di_kem
+                                                  join khach_hang on hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
+                                         where year(ngay_lam_hop_dong) = '2021'
+                                           and khach_hang.ma_loai_khach = 2
+                                         group by hop_dong.ma_hop_dong
+                                         having tong_tien > 10000000) as y);
+
+-- task19--
+update dich_vu_di_kem
+set gia=gia * 2
+where dich_vu_di_kem.ma_dich_vu_di_kem in (select ma_dich_vu_di_kem
+                                           from (select distinct dich_vu_di_kem.ma_dich_vu_di_kem,
+                                                                 sum(hop_dong_chi_tiet.so_luong) as so_lan_su_dung
+                                                 from dich_vu_di_kem
+                                                          join hop_dong_chi_tiet
+                                                               on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+                                                          join hop_dong on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
+                                                 where year(ngay_lam_hop_dong) = '2020'
+                                                 group by dich_vu_di_kem.ma_dich_vu_di_kem
+                                                 having so_lan_su_dung > 10) as z);
+
+-- task 20--
+select khach_hang.ma_khach_hang as id,
+       khach_hang.ho_ten,
+       khach_hang.email,
+       khach_hang.so_dien_thoai,
+       khach_hang.ngay_sinh,
+       khach_hang.dia_chi
+from khach_hang
+union all
+select nhan_vien.ma_nhan_vien as id,
+       nhan_vien.ho_ten,
+       nhan_vien.email,
+       nhan_vien.so_dien_thoai,
+       nhan_vien.ngay_sinh,
+       nhan_vien.dia_chi
+from nhan_vien;

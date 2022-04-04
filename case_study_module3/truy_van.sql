@@ -118,14 +118,15 @@ group by hop_dong.ma_hop_dong;
 -- task 13--
 select dich_vu_di_kem.ma_dich_vu_di_kem,
        dich_vu_di_kem.ten_dich_vu_di_kem,
-       max(sub_so_luong_dich_vu_di_kem) as so_luong_dich_vu_di_kem
+       sum(coalesce(hop_dong_chi_tiet.so_luong, 0)) as so_luong_dich_vu_di_kem
 from dich_vu_di_kem
          join hop_dong_chi_tiet on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
-         join (select dich_vu_di_kem.ma_dich_vu_di_kem, sum(hop_dong_chi_tiet.so_luong) as sub_so_luong_dich_vu_di_kem
-               from dich_vu_di_kem
-                        join hop_dong_chi_tiet on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
-               group by dich_vu_di_kem.ma_dich_vu_di_kem) a on dich_vu_di_kem.ma_dich_vu_di_kem = a.ma_dich_vu_di_kem
-group by dich_vu_di_kem.ma_dich_vu_di_kem;
+group by dich_vu_di_kem.ma_dich_vu_di_kem
+having so_luong_dich_vu_di_kem = (select sum(coalesce(so_luong, 0)) as x
+                                  from hop_dong_chi_tiet
+                                  group by hop_dong_chi_tiet.ma_hop_dong_chi_tiet
+                                  order by x desc
+                                  limit 1);
 
 -- task 14--
 select hop_dong.ma_hop_dong,
@@ -154,6 +155,8 @@ group by nv.ma_nhan_vien
 having so_lan >= 3;
 
 -- task16--
+set sql_safe_updates = 0;
+set foreign_key_checks = 0;
 delete
 from nhan_vien
 where nhan_vien.ma_nhan_vien not in (select ma_nhan_vien
@@ -161,7 +164,8 @@ where nhan_vien.ma_nhan_vien not in (select ma_nhan_vien
                                            from nhan_vien
                                                     join hop_dong on nhan_vien.ma_nhan_vien = hop_dong.ma_nhan_vien
                                            where year(hop_dong.ngay_lam_hop_dong) between '2019' and '2021') as x);
-
+set sql_safe_updates = 1;
+set foreign_key_checks = 1;
 -- task17--
 update khach_hang
 set khach_hang.ma_loai_khach=1
@@ -180,13 +184,24 @@ where khach_hang.ma_khach_hang in (select ma_khach_hang
                                            and khach_hang.ma_loai_khach = 2
                                          group by hop_dong.ma_hop_dong
                                          having tong_tien > 10000000) as y);
-
+-- task18--
+set sql_safe_updates = 0;
+SET FOREIGN_KEY_CHECKS = 0;
+delete
+from khach_hang
+where khach_hang.ma_khach_hang in (select ma_khach_hang
+                                   from (select distinct khach_hang.ma_khach_hang
+                                         from khach_hang
+                                                  join hop_dong on khach_hang.ma_khach_hang = hop_dong.ma_khach_hang
+                                         where year(ngay_lam_hop_dong) < '2021') as table_se_xoa);
+SET FOREIGN_KEY_CHECKS = 1;
+set sql_safe_updates = 1;
 -- task19--
 update dich_vu_di_kem
 set gia=gia * 2
 where dich_vu_di_kem.ma_dich_vu_di_kem in (select ma_dich_vu_di_kem
                                            from (select distinct dich_vu_di_kem.ma_dich_vu_di_kem,
-                                                                 sum(hop_dong_chi_tiet.so_luong) as so_lan_su_dung
+                                                                 sum(coalesce(hop_dong_chi_tiet.so_luong, 0)) as so_lan_su_dung
                                                  from dich_vu_di_kem
                                                           join hop_dong_chi_tiet
                                                                on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
@@ -211,3 +226,63 @@ select nhan_vien.ma_nhan_vien as id,
        nhan_vien.ngay_sinh,
        nhan_vien.dia_chi
 from nhan_vien;
+
+-- task21--
+create or replace view v_nhan_vien as
+select *
+from nhan_vien
+where nhan_vien.dia_chi like '%Hải Châu%'
+  and nhan_vien.ma_nhan_vien in (select ma_nhan_vien
+                                 from hop_dong
+                                 where hop_dong.ngay_lam_hop_dong = '2019-12-12');
+
+-- task22--
+set sql_safe_updates = 0;
+update v_nhan_vien
+set dia_chi = 'Liên Chiểu'
+where true;
+set sql_safe_updates = 1;
+
+-- task23--
+delimiter //
+create procedure sp_xoa_khach_hang(in ma_khach_hang_del int)
+begin
+    set sql_safe_updates = 0;
+    delete from khach_hang where ma_khach_hang = ma_khach_hang_del;
+    set sql_safe_updates = 1;
+end;
+delimiter //
+-- task24--
+delimiter //
+create procedure add_them_hop_dong(add_ngay_lam_hd date, add_ngay_ket_thuc date, add_tien_dat_coc double,
+                                   add_ma_nhan_vien int, add_ma_khach_hang int, add_ma_dich_vu int)
+begin
+    if datediff(add_ngay_lam_hd, add_ngay_ket_thuc) < 0
+    then
+        signal sqlstate '91111'
+            set message_text = 'ngày làm hd phải bé hơn ngày kết thúc';
+    end if
+    //
+    if add_ma_nhan_vien not in (select ma_nhan_vien from nhan_vien)
+    then
+        signal sqlstate '91111'
+            set message_text = 'Mã nhân viên ko tồn tại';
+    end if
+    //
+    if add_ma_khach_hang not in (select ma_khach_hang from khach_hang)
+    then
+        signal sqlstate '91111'
+            set message_text = 'Mã khách hàng k tồn tại';
+    end if
+    //
+    if add_ma_dich_vu not in (select ma_dich_vu from dich_vu)
+    then
+        signal sqlstate '91111'
+            set message_text = 'Mã dịch vụ k tồn tại';
+    end if
+    //
+    insert into hop_dong (ngay_lam_hop_dong, ngay_ket_thuc, tien_dat_coc, ma_nhan_vien, ma_khach_hang, ma_dich_vu)
+    values (add_ngay_lam_hd, add_ngay_ket_thuc, add_tien_dat_coc, add_ma_nhan_vien, add_ma_khach_hang, add_ma_dich_vu);
+end;
+delimiter //
+call add_them_hop_dong();

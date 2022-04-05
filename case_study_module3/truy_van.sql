@@ -286,3 +286,30 @@ begin
 end;
 delimiter //
 call add_them_hop_dong();
+-- task25-- sai
+delimiter //
+create trigger tr_xoa_hop_dong
+    after delete
+    on hop_dong
+    for each row
+begin
+
+end//
+delimiter //
+
+-- task26--
+delimiter //
+create function func_dem_dich_vu()
+    returns int
+reads sql data deterministic
+begin
+    select count(ma_dich_vu)
+    into @count
+    from (select dich_vu.ma_dich_vu, count(hop_dong.ma_dich_vu) as so_lan_sd
+          from hop_dong
+                   join dich_vu on hop_dong.ma_dich_vu = dich_vu.ma_dich_vu
+          group by ma_dich_vu,dich_vu.chi_phi_thue
+        having (so_lan_sd*dich_vu.chi_phi_thue)>2000000) as aa;
+    return @count;
+end //
+delimiter //

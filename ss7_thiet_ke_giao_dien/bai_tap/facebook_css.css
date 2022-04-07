@@ -39,35 +39,44 @@ body{
     position: absolute;
     top: 13px;
     color: black;
-    width:100%;
     height:30px;
 }
-
-#header>.home-btn,.tv-btn,.mk-btn,.human-btn,.game-btn,.avt-btn{
-    line-height: 56px;
+.acc>li>a>svg{
+    top: 13px;
+    color: black;
+    height:30px;
+}
+#header>.home-btn,.tv-btn,.mk-btn,.human-btn,.game-btn,.avt-btn,
+.menu-btn,.mess-btn,.notif-btn,.arrow-down{
     width: 56px;
     height: 56px;
     position: relative;
     left: 10%;
     margin: 0 30px;
 }
-.avt-btn>a>img{
-    border-radius: 50%;
-    position: absolute;
-    top: 10px;
-    width:40px;
-    height:40px;
+
+ul{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0px;
+    margin-left: 180px;
+    padding-left: 0px;
+    
 }
-#header>.avt-btn{
-    line-height: 56px;
-    width: 56px;
-    height: 56px;
-    position: relative;
-    left: 20%;
-    margin: 0 30px;
+ul>li{
+    text-align: center;
+    padding: 2.9%;
+    margin: 0 10px;
 }
-.avt-btn>span{
+.acc li:hover .sub-arrow-down{
+    display: block;
+}
+.sub-arrow-down{
+    display: none;
+    top: 59px;
     position: absolute;
-    left: 85%;
-    top:3%;
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    right: 0px;
 }

@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+}
+#header{
+    /* background-color: gray; */
+    display: flex;
+    height: 60px;
+    width: 100%;
+    border-bottom: .5px solid gray;
+    position: fixed;
+}
+#logo{
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    position: relative;
+    left: 4px;
+}
+#logo>a>img{
+    width: 56px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+#search{
+    line-height: 59px;
+}
+#search>input{
+    background-image: url('https://www.w3schools.com/css/searchicon.png');
+    background-position: 10px 12px; 
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 40px; 
+    height: 45px;
+    border-radius: 50px;
+    border:1px solid lightgray;
+}
+
+#header>div>a>svg{
+    position: absolute;
+    top: 13px;
+    color: black;
+    width:100%;
+    height:30px;
+}
+
+#header>.home-btn,.tv-btn,.mk-btn,.human-btn,.game-btn,.avt-btn{
+    line-height: 56px;
+    width: 56px;
+    height: 56px;
+    position: relative;
+    left: 10%;
+    margin: 0 30px;
+}
+.avt-btn>a>img{
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    width:40px;
+    height:40px;
+}
+#header>.avt-btn{
+    line-height: 56px;
+    width: 56px;
+    height: 56px;
+    position: relative;
+    left: 20%;
+    margin: 0 30px;
+}
+.avt-btn>span{
+    position: absolute;
+    left: 85%;
+    top:3%;
+}

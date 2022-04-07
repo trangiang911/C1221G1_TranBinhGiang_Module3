@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <ul>
+          <li><a href="#" class="bttn">Chương 1</a></li>
+          <li><a href="#" class="bttn">Chương 2</a></li>
+          <li><a href="#" class="bttn">Chương 3</a></li>
+          <li><a href="#" class="bttn">Chương 4</a></li>
+        </ul>
+      </div>
+      <div class="div" style="display: block;">
+      </div>
+    <script>
+        const elementDiv=document.querySelector('.div');
+        const button=document.querySelectorAll('.bttn');
+
+        const data={
+            chuong_1:'data1',
+            chuong_2:'data2',
+            chuong_3:'data3',
+            chuong_4:'data4',
+        }
+        elementDiv.innerText=data[`chuong_1`];
+        button.forEach(function(el,index){
+            el.onclick=function(){
+                elementDiv.innerText=data[`chuong_${[index+1]}`];
+            console.log(data[`chuong_${[index+1]}`])}
+        })
+        
+    </script>
+</body>
+</html>

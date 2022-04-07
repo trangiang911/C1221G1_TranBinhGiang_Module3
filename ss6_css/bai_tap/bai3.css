@@ -1,0 +1,77 @@
+html{
+  scroll-behavior: smooth;
+}
+.dautrang {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  z-index: 100;
+  top: 90%;
+  right: 2%;
+}
+.dautrang>a>img{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+div>p{
+  font-size: 24px;
+}
+body {
+  background-color: lightgray;
+}
+
+h1 {
+  text-align: center;
+  background-image: url(https://st.quantrimang.com/photos/image/2021/02/03/Hinh-nen-xanh-la-cay-30.jpg);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: #ffffff;
+  padding-top: 20px;
+  font-size: 30px;
+  font-family: "Bungee", cursive;
+  padding-top: 0px;
+}
+img {
+  height: 20%;
+  width: 20%;
+  margin-left: 0%;
+}
+#tomtat {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  font-size: 40px;
+}
+ul > li > a {
+  text-decoration: none;
+}
+p {
+  text-align: justify;
+  margin-top: 0%;
+}
+
+#div2,
+#div3,
+#div4,
+#div5 {
+  display: none;
+  width: 80%;
+  margin: auto;
+}
+#tomtat1 {
+  margin-left: 20px;
+}
+#div1 {
+  display: block;
+  margin-left: 45%;
+}
+ div>marquee{
+   font-size: 20px;
+ }
+ 

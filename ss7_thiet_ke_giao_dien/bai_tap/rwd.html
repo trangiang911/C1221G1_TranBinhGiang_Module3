@@ -87,25 +87,22 @@
       .header .col-6 span{
           float: right;
       }
-      .col-3{
-          text-align: center;
-          background-color: rgb(209, 207, 207)
+      .col-12>div{
+        height: 100%;
       }
       .col-3>ul>li{
-          display: block;
+        display: block;
       }
-      .content>div{
-          display: inline-block;
-          text-align: center;
+      .col-3>ul>li>a{
+        text-decoration: none;
       }
-      .content .col-6 span{
-          color: black;
+      .col-3>ul{
+        text-align: center;
       }
       .col-3>input{
-        display: block;
-        margin: 20px 0;
-        width: 100px;
         height: 50px;
+        width: 90px;
+        margin: 20px 0;
       }
     </style>
   </head>
@@ -124,24 +121,26 @@
         <span> Login </span>
       </div>
     </div>
-    <div class="content" style="height: 100%;">
-      <div class="col-3" style="height: 100%;">
+    <div class="col-12" style="height: 200px;;">
+      <div class="col-3" style="height: 100%;background-color: rgb(209, 209, 209);">
         <ul>
-            <li><a href="">link</a></li>
-            <li><a href="">link</a></li>
-            <li><a href="">link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a</li>
         </ul>
       </div>
-      <div class="col-6" style="background-color: white;height: 100%;">
-          <span>Welcome</span>
+      <div class="col-6" style="text-align: center;height: 100%;">
+        <span style="color: black;">Welcome</span>
       </div>
-      <div class="col-3" style="display: flex; align-content: flex-start; align-items: center; flex-direction: column;height: 100%;">
-          <input type="button" value="ADS">
-          <input type="button" value="ADS">
+      <div class="col-3" style="height:100%;display: flex;flex-direction: column;align-items: center;background-color: rgb(209, 209, 209)">
+        <input type="button" value="ADS" style="display: block;">
+        <input type="button" value="ADS" style="display: block;">
       </div>
     </div>
-    <div class="col-12" style="text-align: center; background-color: gray;">
-        <span>Footer</span>
-    </div>
+    <div class="col-12" style="height: 50px;background-color: gray;text-align: center;line-height: 50px;">
+    <span>
+      Footer
+    </span>
+  </div>
   </body>
 </html>

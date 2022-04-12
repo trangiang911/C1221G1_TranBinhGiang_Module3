@@ -294,8 +294,8 @@ CREATE TRIGGER tr_xoa_hop_dong AFTER DELETE
     FOR EACH ROW
 BEGIN
     SET @x = (SELECT count(*) AS FROM hop_dong);
-END
-DELIMITER ;
+END;
+DELIMITER //
 set foreign_key_checks =0;
 SET @x = 0;
 DELETE FROM hop_dong where hop_dong.ma_hop_dong = 12;
@@ -351,7 +351,7 @@ delimiter //
 drop procedure if exists sp_xoa_dich_vu_va_hd_room //
 create procedure sp_xoa_dich_vu_va_hd_room()
 begin
-    declare dich_vu int default 0;
+    declare dich_vu_1 int default 0;
     declare hoan_thanh int default 0;
     declare con_tro cursor for
         select dich_vu.ma_dich_vu from dich_vu join hop_dong on dich_vu.ma_dich_vu = hop_dong.ma_dich_vu
@@ -364,8 +364,8 @@ begin
         if hoan_thanh = 1 then
             leave get_list;
         end if;
-        delete from hop_dong where hop_dong.ma_dich_vu = dich_vu ;
-        delete from dich_vu where dich_vu.ma_dich_vu = dich_vu ;
+        delete from hop_dong where hop_dong.ma_dich_vu = dich_vu_1 ;
+        delete from dich_vu where dich_vu.ma_dich_vu = dich_vu_1;
     end loop get_list;
     close con_tro;
 end //

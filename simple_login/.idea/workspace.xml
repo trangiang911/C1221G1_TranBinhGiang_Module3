@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="79e8e9db-8d63-4ef7-bbe9-6cca893794bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.gradle/6.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/build/libs/demo-tomcat-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/demo-tomcat/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/6.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/build/classes/java/main/SeverTimeServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/build/libs/server-time-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/src/main/java/SeverTimeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/server-time/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/6.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/build/classes/java/main/LoginSevlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/build/libs/simple_login-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/src/main/java/LoginSevlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study_module3/truy_van.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study_module3/truy_van.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/bai_tap/microsoft.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_bootstrap/bai_tap/microsoft.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="27gEA6pJGx3hhtwHE8Xrc5odFOZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ss9_tong_quan_ung_dung_web" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.62" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.62" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.example : simple_login-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_simple_login" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52277" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.example : simple_login-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79e8e9db-8d63-4ef7-bbe9-6cca893794bb" name="Default Changelist" comment="" />
+      <created>1649733182828</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649733182828</updated>
+      <workItem from="1649733189549" duration="560000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1649733390235">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1649733390235" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1649733316659">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1649733316659" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1649733752938">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1649733752938" />
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1649733755251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1649733755251" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1649733755251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1649733755251" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1649733755251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1649733755251" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1649733755251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1649733755251" />
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1649733755251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1649733755251" />
+    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1649733755251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1649733755251" />
+    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1649733755251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1649733755251" />
+    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1649733755251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1649733755251" />
+    <state width="1024" height="210" key="GridCell.Tab.2.bottom" timestamp="1649733755251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1649733755251" />
+    <state width="1024" height="210" key="GridCell.Tab.2.center" timestamp="1649733755251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1649733755251" />
+    <state width="1024" height="210" key="GridCell.Tab.2.left" timestamp="1649733755251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1649733755251" />
+    <state width="1024" height="210" key="GridCell.Tab.2.right" timestamp="1649733755251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1649733755251" />
+    <state x="209" y="23" key="new project wizard" timestamp="1649733679156">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="23" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1649733679156" />
+  </component>
+</project>

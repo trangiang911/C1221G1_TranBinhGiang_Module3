@@ -19,132 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5407b522-3a7c-4d4f-9bfd-18552820c9ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/META-INF/war-tracker" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/ss9_tong_quan_ung_dung_web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProductDiscountCalculatorServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/src/main/java/CurrencyConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.gradle/6.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/build/libs/demo-tomcat-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/demo-tomcat/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/6.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.idea/server-time.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/build/classes/java/main/SeverTimeServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/build/libs/server-time-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/src/main/java/SeverTimeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/6.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/build/classes/java/main/LoginSevlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/build/libs/simple_login-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/src/main/java/LoginSevlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple_login/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien_don_gian/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien_don_gian/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien_don_gian/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien_don_gian/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien_don_gian/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien_don_gian/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien_don_gian/src/main/java/TranslationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_module3/truy_van.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_module3/truy_van.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss8_bootstrap/bai_tap/microsoft.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_bootstrap/bai_tap/microsoft.html" afterDir="false" />
-    </list>
+    <list default="true" id="5407b522-3a7c-4d4f-9bfd-18552820c9ad" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../thuc_hanh/tu_dien_don_gian" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -279,6 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649754593572</updated>
       <workItem from="1649754598853" duration="2486000" />
+      <workItem from="1649757320582" duration="691000" />
     </task>
     <servers />
   </component>
@@ -295,6 +171,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

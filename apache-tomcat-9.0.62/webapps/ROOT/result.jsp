@@ -14,5 +14,6 @@
 <h2>${result}</h2>
 <h2>${product}</h2>
 <h2>${discount}</h2>
+<h2>${resultPrice}</h2>
 </body>
 </html>

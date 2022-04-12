@@ -11,9 +11,11 @@ public class ProductDiscountCalculatorServlet extends javax.servlet.http.HttpSer
         double discount = Double.parseDouble(request.getParameter("discount-percent"));
         String str=request.getParameter("product-description");
         double result = listPrice * discount * 0.01;
+        double resultPri=listPrice-result;
         request.setAttribute("result", result);
         request.setAttribute("product", str);
         request.setAttribute("discount", discount);
+        request.setAttribute("resultPrice",resultPri);
         request.getRequestDispatcher("/result.jsp").forward(request, response);
     }
 }

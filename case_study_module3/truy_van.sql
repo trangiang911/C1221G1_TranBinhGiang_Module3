@@ -286,18 +286,38 @@ begin
 end;
 delimiter //
 call add_them_hop_dong();
--- task25-- sai
-delimiter //
-create trigger tr_xoa_hop_dong
-    after delete
-    on hop_dong
-    for each row
-begin
 
-end//
-delimiter //
+-- task25--
+DELIMITER //
+CREATE TRIGGER tr_xoa_hop_dong AFTER DELETE
+    ON hop_dong
+    FOR EACH ROW
+BEGIN
+    SET @x = (SELECT count(*) AS FROM hop_dong);
+END
+DELIMITER ;
+set foreign_key_checks =0;
+SET @x = 0;
+DELETE FROM hop_dong where hop_dong.ma_hop_dong = 12;
+SELECT @x AS 'Total amount deleted' ;
+set foreign_key_checks =0;
 
 -- task26--
+DELIMITER //
+CREATE TRIGGER tr_cap_nhat_hop_dong
+    BEFORE UPDATE
+    ON hop_dong
+    FOR EACH ROW
+BEGIN
+    IF datediff(NEW.ngay_ket_thuc, NEW.ngay_lam_hop_dong) < 2 THEN
+        SIGNAL SQLSTATE '45000'
+            SET MESSAGE_TEXT ='Ngày kết thúc hợp đồng phải lớn hơn ngày làm hợp đồng ít nhất là 2 ngày';
+    END IF;
+END //
+DELIMITER ;
+UPDATE hop_dong set ngay_ket_thuc = '2021-09-08' WHERE ma_hop_dong = 7;
+
+-- task27--
 delimiter //
 create function func_dem_dich_vu()
     returns int
@@ -313,3 +333,42 @@ begin
     return @count;
 end //
 delimiter //
+
+select func_dem_dich_vu() as 'Tổng số lượng dịch vụ có tổng tiền trên 2000000';
+delimiter //
+drop function if exists func_tinh_thoi_gian_hop_dong //
+create function func_tinh_thoi_gian_hop_dong(ma_khach_hang int ) returns int
+    deterministic
+begin
+    set @thoi_gian_dai_nhat = (select max(datediff(hop_dong.ngay_lam_hop_dong,hop_dong.ngay_ket_thuc)) from hop_dong
+                               where hop_dong.ma_hop_dong = ma_khach_hang);
+    return @thoi_gian_dai_nhat;
+end;
+select func_tinh_thoi_gian_hop_dong(4) as 'thời gian dài nhất';
+
+-- task28--
+delimiter //
+drop procedure if exists sp_xoa_dich_vu_va_hd_room //
+create procedure sp_xoa_dich_vu_va_hd_room()
+begin
+    declare dich_vu int default 0;
+    declare hoan_thanh int default 0;
+    declare con_tro cursor for
+        select dich_vu.ma_dich_vu from dich_vu join hop_dong on dich_vu.ma_dich_vu = hop_dong.ma_dich_vu
+                                               join loai_dich_vu on dich_vu.ma_dich_vu = loai_dich_vu.ma_loai_dich_vu
+        where loai_dich_vu.ten_loai_dich_vu = 'room' and year(hop_dong.ngay_lam_hop_dong) between '2015' and '2025' ;
+    declare continue handler for not found set hoan_thanh = 1;
+    open con_tro;
+    get_list: loop
+        fetch from con_tro into dich_vu;
+        if hoan_thanh = 1 then
+            leave get_list;
+        end if;
+        delete from hop_dong where hop_dong.ma_dich_vu = dich_vu ;
+        delete from dich_vu where dich_vu.ma_dich_vu = dich_vu ;
+    end loop get_list;
+    close con_tro;
+end //
+set foreign_key_checks =0;
+call sp_xoa_dich_vu_va_hd_room();
+set foreign_key_checks =1;

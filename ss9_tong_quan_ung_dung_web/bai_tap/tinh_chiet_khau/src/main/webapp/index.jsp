@@ -13,9 +13,9 @@
   <body>
   <h2>Product Discount Calculator</h2>
   <form action="/display-discount" method="get">
-    <input type="text" name="product-description" placeholder="Mô tả sản phẩm">
-    <input type="number" name="list-price" placeholder="Giá niêm yết">
-    <input type="number" name="discount-percent" placeholder="Tỉ lệ chiết khấu">
+    <input type="text" name="productDescription" placeholder="Mô tả sản phẩm">
+    <input type="number" name="listPrice" placeholder="Giá niêm yết">
+    <input type="number" name="discountPercent" placeholder="Tỉ lệ chiết khấu">
     <button type="submit">Calculate Discount</button>
   </form>
   </body>

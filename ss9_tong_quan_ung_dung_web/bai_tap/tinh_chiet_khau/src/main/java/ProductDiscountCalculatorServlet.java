@@ -7,9 +7,9 @@ public class ProductDiscountCalculatorServlet extends javax.servlet.http.HttpSer
     }
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
-        double listPrice = Double.parseDouble(request.getParameter("list-price"));
-        double discount = Double.parseDouble(request.getParameter("discount-percent"));
-        String str=request.getParameter("product-description");
+        double listPrice = Double.parseDouble(request.getParameter("listPrice"));
+        double discount = Double.parseDouble(request.getParameter("discountPercent"));
+        String str=request.getParameter("productDescription");
         double result = listPrice * discount * 0.01;
         double resultPri=listPrice-result;
         request.setAttribute("result", result);

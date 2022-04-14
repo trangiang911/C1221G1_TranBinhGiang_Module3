@@ -20,9 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5407b522-3a7c-4d4f-9bfd-18552820c9ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../ss10_jsp_va_jspl/bai_tap/hien_thi_danh_sach/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_jsp_va_jspl/bai_tap/hien_thi_danh_sach/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_jsp_va_jspl/bai_tap/hien_thi_danh_sach/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_jsp_va_jspl/bai_tap/hien_thi_danh_sach/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_jsp_va_jspl/bai_tap/hien_thi_danh_sach/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_jsp_va_jspl/bai_tap/hien_thi_danh_sach/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_jsp_va_jspl/bai_tap/hien_thi_danh_sach/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_jsp_va_jspl/bai_tap/hien_thi_danh_sach/build/classes/java/main/DisplayServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_jsp_va_jspl/bai_tap/hien_thi_danh_sach/build/classes/java/main/KhachHang.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_jsp_va_jspl/bai_tap/hien_thi_danh_sach/src/main/java/DisplayServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_jsp_va_jspl/bai_tap/hien_thi_danh_sach/src/main/java/KhachHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_jsp_va_jspl/bai_tap/hien_thi_danh_sach/src/main/webapp/display.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/WEB-INF/classes/ProductDiscountCalculatorServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/result.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProductDiscountCalculatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProductDiscountCalculatorServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +174,9 @@
       <workItem from="1649754598853" duration="2486000" />
       <workItem from="1649757320582" duration="1012000" />
       <workItem from="1649813769358" duration="102000" />
+      <workItem from="1649814218723" duration="845000" />
+      <workItem from="1649815703987" duration="1854000" />
+      <workItem from="1649820346118" duration="1337000" />
     </task>
     <servers />
   </component>
@@ -186,10 +203,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1649754698229" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1649757065832">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1649815015275">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1649757065832" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1649815015275" />
     <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1649758513039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -238,5 +255,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1024" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1649758513039" />
+    <state x="209" y="23" key="new project wizard" timestamp="1649815060553">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="23" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1649815060553" />
   </component>
 </project>

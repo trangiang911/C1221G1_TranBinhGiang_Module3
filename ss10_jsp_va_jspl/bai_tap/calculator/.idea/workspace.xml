@@ -20,59 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f23aee5-19fd-46fc-a813-af574ababa87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/WEB-INF/classes/model/Calculator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/WEB-INF/classes/servlet/CalcultatorServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/CalcultatorServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hien_thi_danh_sach/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hien_thi_danh_sach/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hien_thi_danh_sach/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hien_thi_danh_sach/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hien_thi_danh_sach/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hien_thi_danh_sach/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hien_thi_danh_sach/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hien_thi_danh_sach/build/classes/java/main/DisplayServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hien_thi_danh_sach/build/classes/java/main/KhachHang.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hien_thi_danh_sach/src/main/java/DisplayServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hien_thi_danh_sach/src/main/java/KhachHang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hien_thi_danh_sach/src/main/webapp/display.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/chuyen_doi_tien_te/src/main/webapp/converter.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/tu_dien/src/main/webapp/dictionary.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/WEB-INF/classes/ProductDiscountCalculatorServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.62/webapps/ROOT/result.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_tong_quan_ung_dung_web/bai_tap/tinh_chiet_khau/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_tong_quan_ung_dung_web/bai_tap/tinh_chiet_khau/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_tong_quan_ung_dung_web/bai_tap/tinh_chiet_khau/src/main/java/ProductDiscountCalculatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_tong_quan_ung_dung_web/bai_tap/tinh_chiet_khau/src/main/java/ProductDiscountCalculatorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,6 +157,7 @@
       <workItem from="1649839554440" duration="2108000" />
       <workItem from="1649898019158" duration="298000" />
       <workItem from="1649899015374" duration="1019000" />
+      <workItem from="1649900479902" duration="1652000" />
     </task>
     <servers />
   </component>
@@ -235,6 +184,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1649838129653" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1649902274988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1649902274988" />
     <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1649900077882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -283,5 +236,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1024" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1649900077882" />
+    <state x="209" y="23" key="new project wizard" timestamp="1649902296451">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="23" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1649902296451" />
   </component>
 </project>

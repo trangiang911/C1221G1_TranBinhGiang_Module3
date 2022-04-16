@@ -38,7 +38,7 @@
             <td>${x.getProducer()}</td>
             <td><a href="/product?action=edit&id=${x.getId()}">edit</a></td>
             <td>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" onclick="deleteProduct(${x.getId()})">
                     delete
                 </button>
                 <!-- Modal -->
@@ -60,7 +60,7 @@
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 <form method="post">
                                     <input type="hidden" name="action" value="del">
-                                    <input type="hidden" name="id" value="${x.getId()}">
+                                    <input type="hidden" name="id" id="id-del">
                                     <button type="submit" class="btn btn-primary">Xác nhận xoá</button>
                                 </form>
                             </div>
@@ -83,5 +83,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script>
+    function deleteProduct(id) {
+        document.getElementById("id-del").value=id;
+    }
+</script>
 </body>
 </html>

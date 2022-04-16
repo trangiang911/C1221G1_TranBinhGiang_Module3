@@ -12,10 +12,10 @@
 </head>
 <body>
 <form method="post">
-    <input type="text" name="name" placeholder="Nhập tên chỉnh sửa"><br>
-    <input type="number" name="price" placeholder="Nhập giá chỉnh sửa"><br>
-    <input type="text" name="sumary" placeholder="Nhập mô tả chỉnh sửa"><br>
-    <input type="text" name="producer" placeholder="Nhập nhà sản xuất chỉnh sửa">
+    <input type="text" name="name" value="${product.getName()}"><br>
+    <input type="number" name="price" value="${product.getPrice()}"><br>
+    <input type="text" name="sumary" value="${product.getSummary()}"><br>
+    <input type="text" name="producer" value="${product.getProducer()}">
     <button type="submit">Xác nhận</button>
 </form>
 </body>

@@ -6,7 +6,15 @@ import java.util.List;
 import java.util.Map;
 
 public interface IProductService {
-    List<Product> getListProduct();
-    Map<String, String> save(Product product);
-    Map<String, String> edit(Product product);
+    List<Product> findAll();
+
+    void save(Product product);
+
+    Product findById(Integer id);
+
+    void update(Integer id, Product product);
+
+    void remove(Integer id);
+
+    List<Product> search(String name);
 }

@@ -5,46 +5,40 @@ import repository.IProductRepository;
 import repository.impl.ProductRepository;
 import services.IProductService;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 
 public class ProductService implements IProductService {
-    private IProductRepository iProductRepository = new ProductRepository();
-
+private IProductRepository iProductRepository= new ProductRepository();
     @Override
-    public List<Product> getListProduct() {
-        List<Product> productList = iProductRepository.getList();
+    public List<Product> findAll() {
+        List<Product> productList=iProductRepository.findAll();
         return productList;
     }
 
     @Override
-    public Map<String, String> save(Product product) {
-        Map<String, String> map = new HashMap<>();
-        if (product.getName().equals("")) {
-            map.put("name", "Tên ko để trống");
-        } else if (!product.getName().matches("^[a-zA-Z ]+$")) {
-            map.put("name", "Tên ko hợp lệ");
-        }
-        if (map.isEmpty()) {
-            iProductRepository.save(product);
-        }
-        return map;
+    public void save(Product product) {
+        iProductRepository.save(product);
     }
 
     @Override
-    public Map<String, String> edit(Product product) {
-        Map<String, String> map = new HashMap<>();
-        if (product.getName().equals("")) {
-            map.put("name", "Tên ko để trống");
-        } else if (!product.getName().matches("^[a-zA-Z ]+$")) {
-            map.put("name", "Tên ko hợp lệ");
-        }
-        if (map.isEmpty()) {
-            iProductRepository.edit(product);
-        }
-        return map;
+    public Product findById(Integer id) {
+        return iProductRepository.findById(id);
     }
 
+    @Override
+    public void update(Integer id, Product product) {
+        iProductRepository.update(id,product);
+    }
 
+    @Override
+    public void remove(Integer id) {
+        iProductRepository.remove(id);
+    }
+
+    @Override
+    public List<Product> search(String name) {
+        List<Product> productList=iProductRepository.search(name);
+        return productList;
+    }
 }

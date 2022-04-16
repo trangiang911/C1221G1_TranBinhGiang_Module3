@@ -15,6 +15,11 @@
 </head>
 <body>
 <h1>Danh sách sản phẩm</h1>
+<form action="/product">
+    <input type="hidden" name="action" value="search">
+    <input type="text" name="name">
+    <button type="submit">Search</button>
+</form>
 <button type="submit"><a href="/product?action=create">Thêm mới</a></button>
 <table class="table table-striped">
     <tr>
@@ -24,7 +29,7 @@
         <td>Mô tả sản phẩm</td>
         <td>Nhà sản xuất</td>
     </tr>
-    <c:forEach var="x" items="${products}">
+    <c:forEach var="x" items="${list}">
         <tr>
             <td>${x.getId()}</td>
             <td>${x.getName()}</td>
@@ -32,11 +37,42 @@
             <td>${x.getSummary()}</td>
             <td>${x.getProducer()}</td>
             <td><a href="/product?action=edit&id=${x.getId()}">edit</a></td>
-            <td><a href="/product?action=del&id=${x.getId()}">delete</a></td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    delete
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Bạn có muốn xoá sản phẩm này
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <form method="post">
+                                    <input type="hidden" name="action" value="del">
+                                    <input type="hidden" name="id" value="${x.getId()}">
+                                    <button type="submit" class="btn btn-primary">Xác nhận xoá</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
         </tr>
 
     </c:forEach>
 </table>
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

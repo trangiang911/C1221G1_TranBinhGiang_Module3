@@ -155,6 +155,7 @@ group by nv.ma_nhan_vien
 having so_lan >= 3;
 
 -- task16--
+use case_study_furama;
 set sql_safe_updates = 0;
 set foreign_key_checks = 0;
 delete
@@ -248,7 +249,9 @@ delimiter //
 create procedure sp_xoa_khach_hang(in ma_khach_hang_del int)
 begin
     set sql_safe_updates = 0;
+    set foreign_key_checks = 0;
     delete from khach_hang where ma_khach_hang = ma_khach_hang_del;
+    set foreign_key_checks = 1;
     set sql_safe_updates = 1;
 end;
 delimiter //

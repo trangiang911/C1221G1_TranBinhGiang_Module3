@@ -108,7 +108,7 @@
                    style="width: 100%">
                 <thead>
                 <tr>
-                    <td>Mã Khách hàng</td>
+                    <td>stt</td>
                     <td>Mà loại khách</td>
                     <td>Họ tên</td>
                     <td>Ngày sinh</td>
@@ -122,9 +122,9 @@
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach var="x" items="${list}">
+                <c:forEach var="x" items="${list}" varStatus="index">
                     <tr>
-                        <td>${x.getMaKhachHang()}</td>
+                        <td>${index.count}</td>
                         <td>
                             <c:forEach var="y" items="${sub_list}">
                                 <c:if test="${x.getMaLoaiKhach() eq y.getMaLoaiKhachHang()}">

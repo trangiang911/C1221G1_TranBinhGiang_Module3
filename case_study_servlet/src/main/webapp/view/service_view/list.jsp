@@ -101,22 +101,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12">
-            <h1>Danh sách khách hàng</h1>
-<%--            <button type="submit"><a href="/product?action=create">Thêm mới</a></button>--%>
-            <hr>
-<%--            <form action="/customer">--%>
-<%--                <input type="hidden" name="action" value="search">--%>
-<%--                <input type="text" name="name" placeholder="name">--%>
-<%--                <input type="text" name="dia_chi" placeholder="Địa chỉ">--%>
-<%--                <select name="type">--%>
-<%--                    <option value=""> Chọn loại Khách</option>--%>
-<%--                    <c:forEach var="y" items="${sub_list}">--%>
-<%--                        <option value="${y.getMaLoaiKhachHang()}">${y.getLoaiKhachHang() }</option>--%>
-<%--                    </c:forEach>--%>
-<%--                </select>--%>
-<%--                <button>Search</button>--%>
-<%--            </form>--%>
+        <button type="submit"><a href="/service?action=create">Thêm mới</a></button>
+        <hr>
     <table border="1" cellpadding="5" id="Mytable" class="table table-striped table-bordered"
            style="width: 100%">
         <thead>
@@ -126,8 +112,8 @@
             <td>Diện tích</td>
             <td>Chi phí thuê</td>
             <td>Số người tối đa</td>
-            <td>Kiểu thuê</td>
             <td>Kiểu dịch vụ</td>
+            <td>Kiểu dịch vụKiểu thuê</td>
             <td>Tiêu chuẩn phòng</td>
             <td>Mô tả tiện nghi khác </td>
             <td>Diện tích bể bơi</td>
@@ -144,22 +130,22 @@
                 <td>${x.getSoNguoiToiDa()}</td>
                 <td>
                     <c:forEach var="y" items="${type_list}">
-                        <c:if test="${x.getKieuThue() eq y.getMaKieuThue() }">
+                        <c:if test="${x.getMaLoaiDichVu() eq y.getMaLoaiDichVu()}">
                             ${y.getTenLoaiDichVu()}
                         </c:if>
                     </c:forEach>
                 </td>
                 <td>
                     <c:forEach var="z" items="${rent_list}">
-                        <c:if test="${x.getMaLoaiDichVu() eq z.getMaLoaiDichVu()}">
-                            ${z. getTenKieuThue()}
+                        <c:if test="${x.getKieuThue() eq z.getMaKieuThue()}">
+                            ${z.getTenKieuThue()}
                         </c:if>
                     </c:forEach>
                 </td>
-                <td>${getMatieuChuanPhong()}</td>
-                <td>${getMoTa()}</td>
-                <td>${getDienTichHoBoi()}</td>
-                <td>${getSoTang()}</td>
+                <td>${x.getMatieuChuanPhong()}</td>
+                <td>${x.getMoTa()}</td>
+                <td>${x.getDienTichHoBoi()}</td>
+                <td>${x.getSoTang()}</td>
             </tr>
         </c:forEach>
         </tbody>

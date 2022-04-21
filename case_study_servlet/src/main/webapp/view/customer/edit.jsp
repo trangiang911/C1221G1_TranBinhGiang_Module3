@@ -29,6 +29,13 @@
                 <td>Loại khách</td>
                 <td>
                     <select name="type_customer">
+                        <option value="${customer.getMaLoaiKhach()}">
+                            <c:forEach var="y" items="${sub_list}">
+                                <c:if test="${customer.getMaLoaiKhach() eq y.getMaLoaiKhachHang()}">
+                                    ${y.getLoaiKhachHang()}
+                                </c:if>
+                            </c:forEach>
+                        </option>
                         <c:forEach var="x" items="${sub_list}">
                             <option value="${x.getMaLoaiKhachHang()}">${x.getLoaiKhachHang()}</option>
                         </c:forEach>
@@ -37,18 +44,24 @@
             </tr>
             <tr>
                 <td>Tên khách hàng</td>
-                <td><input type="text" name="name" value="${customer.getHoTen() }"></td>
+                <td><input type="text" name="name" value="${customer.getHoTen()}"></td>
             </tr>
             <tr>
                 <td>Ngày sinh khách hàng</td>
-                <td><input type="date" name="date" value="${customer.getNgaySinh()}"></td>
+                <td><input type="date" name="date" value="${customer.ngaySinh}"></td>
             </tr>
             <tr>
                 <td>Giới tính</td>
                 <td>
-                    <select name="gender" id="">
-                        <option value="0">Nữ</option>
-                        <option value="1">Nam</option>
+                    <select name="gender" >
+                        <c:if test="${customer.getGioiTinh() == 0}">
+                            <option value="0">Nữ</option>
+                            <option value="1">Nam</option>
+                        </c:if>
+                        <c:if test="${customer.getGioiTinh() == 1}">
+                            <option value="1">Nam</option>
+                            <option value="0">Nữ</option>
+                        </c:if>
                     </select>
                 </td>
             </tr>

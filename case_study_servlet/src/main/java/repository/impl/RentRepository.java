@@ -20,13 +20,13 @@ public class RentRepository implements IRentRepository {
         List<RentType> rentTypes=new ArrayList<>();
         PreparedStatement preparedStatement=null;
         try {
-            preparedStatement=this.baseRepository.getConnectionJavaToDB().prepareStatement("select * from loai_khach");
+            preparedStatement=this.baseRepository.getConnectionJavaToDB().prepareStatement("select * from kieu_thue");
             ResultSet resultSet=preparedStatement.executeQuery();
             RentType rentType;
             while (resultSet.next()){
                 rentType=new RentType();
                 rentType.setMaKieuThue(resultSet.getInt("ma_kieu_thue"));
-                rentType.setTenKieuThue(resultSet.getString("ten_kieu)thue"));
+                rentType.setTenKieuThue(resultSet.getString("ten_kieu_thue"));
                 rentTypes.add(rentType);
             }
         }catch (SQLException throwables) {

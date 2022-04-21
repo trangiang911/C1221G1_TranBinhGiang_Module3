@@ -33,7 +33,7 @@ private IRentService iRentService=new RentService();
         }
         switch (action) {
             case "create":
-//                create(request, response);
+                create(request, response);
                 break;
             case "edit":
 //                edit(request, response);
@@ -46,6 +46,29 @@ private IRentService iRentService=new RentService();
         }
     }
 
+    private void create(HttpServletRequest request, HttpServletResponse response) {
+//        Integer idLK = Integer.parseInt(request.getParameter("type_customer"));
+        String name = request.getParameter("name");
+        Integer area = Integer.parseInt(request.getParameter("area"));
+        Double chiPhiThue = Double.parseDouble(request.getParameter("chi_phi_thue"));
+        Integer soNguoi = Integer.parseInt(request.getParameter("so_nguoi"));
+        Integer maKieuThue = Integer.parseInt(request.getParameter("ma_kieu_thue"));
+        Integer maLoaiDV = Integer.parseInt(request.getParameter("ma_loai_dich_vu"));
+        String tieuChuan = request.getParameter("tieu_chuan");
+        String moTa = request.getParameter("mo_ta");
+        Double areaBeBoi=Double.parseDouble(request.getParameter("dien_tich_be_boi"));
+        Integer soTang=Integer.parseInt(request.getParameter("so_tang"));
+        Service service = new Service(name, area, chiPhiThue, soNguoi, maKieuThue, maLoaiDV, tieuChuan, moTa, areaBeBoi,soTang);
+        iServiceService.save(service);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/service_view/list.jsp");
+        request.setAttribute("mess", "Done");
+        try {
+            requestDispatcher.forward(request, response);
+        } catch (IOException | ServletException e) {
+            e.printStackTrace();
+        }
+    }
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         String action = request.getParameter("action");
@@ -54,7 +77,7 @@ private IRentService iRentService=new RentService();
         }
         switch (action) {
             case "create":
-//                showCreateForm(request, response);
+                showCreateForm(request, response);
                 break;
             case "edit":
 //                showEditFrom(request, response);
@@ -68,6 +91,19 @@ private IRentService iRentService=new RentService();
         }
     }
 
+    private void showCreateForm(HttpServletRequest request, HttpServletResponse response) {
+        List<TypeService> typeServiceList = iTypeService.subFindType();
+        List<RentType> rentTypes=iRentService.subFindRent();
+        request.setAttribute("rent_list",rentTypes);
+        request.setAttribute("type_list", typeServiceList);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/service_view/list.jsp");
+        try {
+            requestDispatcher.forward(request, response);
+        } catch (ServletException | IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     private void listService(HttpServletRequest request, HttpServletResponse response) {
         List<Service> customerList = iServiceService.findAll();
         List<TypeService> typeServiceList = iTypeService.subFindType();
@@ -75,7 +111,7 @@ private IRentService iRentService=new RentService();
         request.setAttribute("rent_list",rentTypes);
         request.setAttribute("type_list", typeServiceList);
         request.setAttribute("list", customerList);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/view/service_view/list.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/view/service_view/create.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {

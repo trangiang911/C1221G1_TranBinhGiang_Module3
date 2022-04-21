@@ -19,13 +19,13 @@ public class TypeRepository implements ITypeRepository {
         List<TypeService> typeServiceList=new ArrayList<>();
         PreparedStatement preparedStatement=null;
         try {
-            preparedStatement=this.baseRepository.getConnectionJavaToDB().prepareStatement("select * from dich_vu");
+            preparedStatement=this.baseRepository.getConnectionJavaToDB().prepareStatement("select * from loai_dich_vu");
             ResultSet resultSet=preparedStatement.executeQuery();
             TypeService typeService;
             while (resultSet.next()){
                 typeService=new TypeService();
-                typeService.setMaLoaiDichVu(resultSet.getInt("ma_loai_khach"));
-                typeService.setTenLoaiDichVu(resultSet.getString("ten_loai_khach"));
+                typeService.setMaLoaiDichVu(resultSet.getInt("ma_loai_dich_vu"));
+                typeService.setTenLoaiDichVu(resultSet.getString("ten_loai_dich_vu"));
                 typeServiceList.add(typeService);
             }
         }catch (SQLException throwables) {

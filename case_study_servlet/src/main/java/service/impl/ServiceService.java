@@ -15,4 +15,9 @@ IServiceRepository iServiceRepository=new ServiceRepository();
         List<Service> serviceList=iServiceRepository.findAll();
         return serviceList;
     }
+
+    @Override
+    public void save(Service service) {
+        iServiceRepository.save(service);
+    }
 }

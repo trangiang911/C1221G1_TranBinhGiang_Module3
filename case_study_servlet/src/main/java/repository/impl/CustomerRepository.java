@@ -119,7 +119,7 @@ public class CustomerRepository implements ICustomerRepository {
             while (resultSet.next()) {
                 type =Integer.parseInt(resultSet.getString("ma_loai_khach"));
                 name = resultSet.getString("ho_ten");
-                date = resultSet.getString("email");
+                date = resultSet.getString("ngay_sinh");
                 gioi_tinh = Integer.parseInt(resultSet.getString("gioi_tinh"));
                 cmnd=resultSet.getString("so_cmnd");
                 sdt=resultSet.getString("so_dien_thoai");

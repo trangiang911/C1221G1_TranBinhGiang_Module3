@@ -44,11 +44,30 @@ public class EmployeeController extends HttpServlet {
                     edit(request, response);
                     break;
                 case "del":
-//                    delete(request,response);
+                    delete(request,response);
                     break;
                 default:
                     break;
             }
+    }
+
+    private void delete(HttpServletRequest request, HttpServletResponse response) {
+        Integer id=Integer.parseInt(request.getParameter("id"));
+        Employee employee=iEmployeeService.findById(id);
+        RequestDispatcher dispatcher;
+        if(employee==null){
+            dispatcher=request.getRequestDispatcher("error.jsp");
+        }else {
+            iEmployeeService.remove(id);
+            request.setAttribute("employee",employee);
+            request.setAttribute("mess","Done");
+            dispatcher=request.getRequestDispatcher("/employee");
+            try{
+                response.sendRedirect("/employee");
+            }catch (IOException e){
+                e.printStackTrace();
+            }
+        }
     }
 
     private void edit(HttpServletRequest request, HttpServletResponse response) {
@@ -115,11 +134,31 @@ public class EmployeeController extends HttpServlet {
                 showEditFrom(request, response);
                 break;
             case "search":
-//                showSearchFrom(request,response);
+                showSearchFrom(request,response);
                 break;
             default:
                 listEmployee(request, response);
                 break;
+        }
+    }
+
+    private void showSearchFrom(HttpServletRequest request, HttpServletResponse response) {
+        String name=request.getParameter("name");
+        String diaChi=request.getParameter("dia_chi");
+        String boPhan=request.getParameter("bo_phan");
+        List<Employee> employeeList=iEmployeeService.search(name,diaChi,boPhan);
+        List<Position> positionList = iPositionService.findPosition();
+        List<Division> divisionList = iDivisionService.findDivision();
+        List<Education> educationList = iEducationService.findEducation();
+        request.setAttribute("list",employeeList);
+        request.setAttribute("position_list", positionList);
+        request.setAttribute("education_list", educationList);
+        request.setAttribute("division_list", divisionList);
+        RequestDispatcher requestDispatcher=request.getRequestDispatcher("/view/employee/list.jsp");
+        try {
+            requestDispatcher.forward(request,response);
+        } catch (ServletException | IOException e) {
+            e.printStackTrace();
         }
     }
 

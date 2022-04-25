@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: ADMIN
@@ -92,10 +93,10 @@
                 <input type="hidden" name="action" value="search">
                 <input type="text" name="name" placeholder="name">
                 <input type="text" name="dia_chi" placeholder="Địa chỉ">
-                <select name="type">
-                    <option value=""> Chọn loại Khách</option>
-                    <c:forEach var="y" items="${sub_list}">
-                        <option value="${y.getMaLoaiKhachHang()}">${y.getLoaiKhachHang() }</option>
+                <select name="bo_phan">
+                    <option value=""> Chọn bộ phận</option>
+                    <c:forEach var="b" items="${division_list}">
+                        <option value="${b.getMaBoPhan()}">${b.getTenBoPhan()}</option>
                     </c:forEach>
                 </select>
                 <button>Search</button>
@@ -126,7 +127,7 @@
                         <td>${x.getHoTen()}</td>
                         <td>${x.getNgaySinh()}</td>
                         <td>${x.getCmnd()}</td>
-                        <td>${x.getLuong()}</td>
+                        <td><fmt:formatNumber>${x.getLuong()}</fmt:formatNumber></td>
                         <td>${x.getSdt()}</td>
                         <td>${x.getEmail()}</td>
                         <td>${x.getDiaChi()}</td>
@@ -154,7 +155,7 @@
                         <td><a href="/employee?action=edit&id=${x.getMaNhanVien()}">edit</a></td>
                         <td>
                             <button type="button" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#exampleModalCenter" onclick="deleteCustomer(${x.getMaNhanVien()})">
+                                    data-target="#exampleModalCenter" onclick="deleteCustomer(${x.getMaNhanVien()},'${x.getHoTen()}')">
                                 delete
                             </button>
 
@@ -171,13 +172,14 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLongTitle">Delete employee</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
                         Bạn có muốn xoá ko
+                        <span>Tên: <p id="name"></p></span>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
@@ -302,8 +304,9 @@
         crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js"></script>
 <script>
-    function deleteCustomer(id) {
+    function deleteCustomer(id,name) {
         document.getElementById("id-del").value = id;
+        document.getElementById("name").innerText=name;
     }
 </script>
 <script>

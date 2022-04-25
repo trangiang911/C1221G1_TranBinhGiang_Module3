@@ -66,13 +66,13 @@
                             <a class="nav-link" href="/home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Employe</a>
+                            <a class="nav-link" href="/employee">Employe</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/customer">Customer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Service</a>
+                            <a class="nav-link" href="/service">Service</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contract</a>

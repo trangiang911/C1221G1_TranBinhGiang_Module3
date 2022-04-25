@@ -4,13 +4,14 @@ import model.customer.Customer;
 import model.customer.TypeCustomer;
 
 import java.util.List;
+import java.util.Map;
 
 public interface ICustomerService {
     List<Customer> findAll();
 
     List<TypeCustomer> subFindAll();
 
-    void save(Customer customer);
+    Map<String,String> save(Customer customer);
 
     Customer findById(Integer id);
 

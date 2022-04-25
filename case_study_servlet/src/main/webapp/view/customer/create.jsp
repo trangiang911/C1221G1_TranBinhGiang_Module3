@@ -37,11 +37,15 @@
             </tr>
             <tr>
                 <td>Tên khách hàng</td>
-                <td><input type="text" name="name"></td>
+                <td>
+                    <input type="text" name="name">
+                    <p style="color: #ff0000">${error.get("name")}</p>
+                </td>
             </tr>
             <tr>
                 <td>Ngày sinh khách hàng</td>
-                <td><input type="date" name="date"></td>
+                <td><input type="date" name="date">
+                </td>
             </tr>
             <tr>
                 <td>Giới tính</td>
@@ -54,7 +58,10 @@
             </tr>
             <tr>
                 <td>Số chứng minh nhân dân</td>
-                <td><input type="text" name="cmnd"></td>
+                <td>
+                    <input type="text" name="cmnd">
+                    <p style="color: red">${error.get("cmnd")}</p>
+                </td>
             </tr>
             <tr>
                 <td>Số điện thoại khách hàng</td>

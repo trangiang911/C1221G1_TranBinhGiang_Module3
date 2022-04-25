@@ -15,4 +15,8 @@ public interface IEmployeeRepository extends ICrudRepository<Employee> {
     Employee findById(Integer id);
 
     boolean update(Employee employee);
+
+    boolean remove(Integer id);
+
+    List<Employee> search(String name, String diaChi, String boPhan);
 }

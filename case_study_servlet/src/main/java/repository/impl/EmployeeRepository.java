@@ -4,6 +4,7 @@ import model.employee.Employee;
 import repository.BaseRepository;
 import repository.IEmployeeRepository;
 
+import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -147,5 +148,56 @@ public class EmployeeRepository implements IEmployeeRepository {
             }
         }
         return rowUpdate;
+    }
+
+    @Override
+    public boolean remove(Integer id) {
+        boolean rowDel=false;
+        try {
+            CallableStatement callableStatement = baseRepository.getConnectionJavaToDB().prepareCall
+                    ("{call sp_xoa_nhan_vien(?)}");
+            callableStatement.setInt(1,id);
+            rowDel = callableStatement.executeUpdate() > 0;
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return rowDel;
+    }
+
+    @Override
+    public List<Employee> search(String name, String diaChi, String boPhan) {
+        List<Employee> employeeList = new ArrayList<>();
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = this.baseRepository.getConnectionJavaToDB().prepareStatement("SELECT * FROM nhan_vien where ho_ten like ? and dia_chi like ? and ma_bo_phan like ?;");
+            preparedStatement.setString(1,"%"+name+"%");
+            preparedStatement.setString(2,"%"+diaChi+"%");
+            preparedStatement.setString(3,"%"+boPhan+"%");
+            ResultSet resultSet = preparedStatement.executeQuery();
+            Employee employee;
+            while (resultSet.next()){
+                Integer id = resultSet.getInt("ma_nhan_vien");
+                String name1 = resultSet.getString("ho_ten");
+                String dateOfBirth = resultSet.getString("ngay_sinh");
+                String id_card = resultSet.getString("so_cmnd");
+                String luong=resultSet.getString("luong");
+                String phone = resultSet.getString("so_dien_thoai");
+                String email = resultSet.getString("email");
+                String address = resultSet.getString("dia_chi");
+                Integer viTri=resultSet.getInt("ma_vi_tri");
+                Integer trinhDo=resultSet.getInt("ma_trinh_do");
+                Integer boPhann=resultSet.getInt("ma_bo_phan");
+                employeeList.add(new Employee(id, name1, dateOfBirth, id_card,luong, phone, email, address,viTri,trinhDo,boPhann));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return employeeList;
     }
 }

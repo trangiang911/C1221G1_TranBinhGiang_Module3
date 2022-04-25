@@ -96,7 +96,7 @@ private IRentService iRentService=new RentService();
         List<RentType> rentTypes=iRentService.subFindRent();
         request.setAttribute("rent_list",rentTypes);
         request.setAttribute("type_list", typeServiceList);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/service_view/list.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/service_view/create.jsp");
         try {
             requestDispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
@@ -111,7 +111,7 @@ private IRentService iRentService=new RentService();
         request.setAttribute("rent_list",rentTypes);
         request.setAttribute("type_list", typeServiceList);
         request.setAttribute("list", customerList);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/view/service_view/create.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/view/service_view/list.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
